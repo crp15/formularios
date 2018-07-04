@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejercicio Formularios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/misestilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="cabecera">
+            <h1>Formulario Gestión de productos</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>Inicio</li>
+                <li>Página 2</li>
+                <li>Página 3</li>
+            </ul>
+        </div>
+        <div id="cuerpo">
+            <h2>Información sobre el producto</h2>
+            <form>
+                <div>
+                    <label for="nombre">Nombre del producto</label>
+                    <input name="nombre" id="nombre" type="text"/>
+                </div>
+                <div>
+                   <label for="descripcion">Descripción</label>  
+                   <textarea name="descripcion" cols="100" rows="5"> </textarea>
+                </div>
+                <div>
+                     <label for="almacen">Disponible en</label>
+                     <input type="checkbox" id="almacen" name="almacen1" value="Almacen1"/>Almacen 1
+            <input type="checkbox" id="almacen" name="almacen2" value="Almacen2"/>Almacen 2
+                </div>
+                <div>
+                   <label for="proveedor">Proveedor</label> 
+                   <input type="radio" name="proveedor" value="corripio"/>Distibuidora Corripio
+                   <input type="radio" name="proveedor" value="ramos"/>Grupo Ramos
+                   <input type="radio" name="proveedor" value="radiocentro"/>Radiocentro
+                </div>
+                <div>
+                  <label for="pais">País de procedencia</label>  
+                  <select name="pais">
+                      <option value="" >Seleccione</option>
+                      <option value="Dominicana" selected="selected">República Dominicana</option>
+                      <option value="china">China</option>
+                      <option value="usa">Estados Unidos</option>
+                      <option value="otro">Otro</option>
+                  </select>
+                </div>
+            </form>
+            <div id="pie">
+                Calle 3 #235, Los Caracoles. Puerto Plata República Dominicana<br>
+                Teléfono 829-123-4567 Cel 849-321-7894<br>
+            </div>
+        </div>
+    </body>
+</html>
